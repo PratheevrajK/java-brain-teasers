@@ -1,4 +1,4 @@
-package conditional_block;
+package a_conditional_block;
 
 public class AssigningBooleanVariableInIfCondition {
     public static void main(String[] args){

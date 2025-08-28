@@ -1,4 +1,4 @@
-package classes_and_objects;
+package c_classes_and_objects;
 
 public class ObjectReference {
     public static void main(String[] args) {

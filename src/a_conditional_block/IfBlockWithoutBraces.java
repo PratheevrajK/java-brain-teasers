@@ -1,4 +1,4 @@
-package conditional_block;
+package a_conditional_block;
 //Take away: Always use curly braces{} for opening and closing the IF block.
 public class IfBlockWithoutBraces {
     public static void main(String[] args) {
