@@ -17,7 +17,7 @@ public class IfBlockWithoutBraces {
     }
     public static void printAlienOrNotWithClosedIfBlock(boolean isAlien) {
         System.out.println("Inside printAlienOrNotWithClosedIfBlock() method.");
-//        If block is closed with semicolon and so following print statement is treated as outside if blocl.
+//        If block is closed with semicolon and so following print statement is treated as outside if block.
         if(isAlien);
             System.out.println("It is an alien!");
     }

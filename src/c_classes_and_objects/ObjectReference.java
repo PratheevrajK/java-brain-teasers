@@ -2,22 +2,22 @@ package c_classes_and_objects;
 
 public class ObjectReference {
     public static void main(String[] args) {
-        House blueHouse = new House("blue");
-        House anotherHouse = blueHouse; // reference of House object is assigned to anotherHouse variable. So, both blueHouse and anotherHouse refers to same object.
+        House house1 = new House("blue");
+        House house2 = house1; // reference of House object is assigned to house2 variable. So, both house1 and house2 refers to same object.
 
-        System.out.println(blueHouse.getColour()); // blue
-        System.out.println(anotherHouse.getColour()); // blue
+        System.out.println(house1.getColour()); // blue
+        System.out.println(house2.getColour()); // blue
 
-        anotherHouse.setColour("yellow");
-        System.out.println(blueHouse.getColour()); // yellow
-        System.out.println(anotherHouse.getColour()); // yellow
+        house2.setColour("yellow");
+        System.out.println(house1.getColour()); // yellow
+        System.out.println(house2.getColour()); // yellow
 
-        House greenHouse = new House("green");
-        anotherHouse = greenHouse;
+        House house3 = new House("green");
+        house2 = house3;
 
-        System.out.println(greenHouse.getColour()); // green
-        System.out.println(anotherHouse.getColour()); // green
-        System.out.println(blueHouse.getColour()); // yellow
+        System.out.println(house3.getColour()); // green
+        System.out.println(house2.getColour()); // green
+        System.out.println(house1.getColour()); // yellow
     }
 }
 

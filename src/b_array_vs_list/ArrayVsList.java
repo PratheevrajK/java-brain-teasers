@@ -25,19 +25,15 @@ public class ArrayVsList {
         try{
             //Adding new element to the array will NOT work, as arrays are not resizable.
             System.out.println("Trying to add new element to the array.");
-            array[3] = "Four";
-            System.out.println("Array:" + Arrays.toString(array));
-            System.out.println("List: " + list);
+            array[3] = "Four";//java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3
         } catch (Exception ex) {
             System.out.println(ex);
         }
 
         try{
             //Adding new element to the list will NOT work, as list is basically an array here.
-            System.out.println("Trying to update existing element in the list.");
-            list.add(3, "Four");
-            System.out.println("Array:" + Arrays.toString(array));
-            System.out.println("List: " + list);
+            System.out.println("Trying to add new element to the list.");
+            list.add("Four");//java.lang.UnsupportedOperationException
         } catch (Exception ex) {
             System.out.println(ex);
         }
